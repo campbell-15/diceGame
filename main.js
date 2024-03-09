@@ -27,8 +27,8 @@ function rollDice() {
 
     let result = document.querySelector('h1')
     setTimeout(() => {
-        let randomNum1 = math.floor(math.random() *6)+1;
-        let randomNum2 = math.floor(math.random() *6)+1;
+        let randomNum1 = Math.floor(Math.random()*6)+1;
+        let randomNum2 = Math.floor(Math.random()*6)+1;
 
         diceNum1.setAttribute('src', 'dice'+randomNum1+'.png');
         diceNum2.setAttribute('src', 'dice'+randomNum2+'.png');
