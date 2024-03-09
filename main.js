@@ -18,6 +18,7 @@ function editNames() {
         .innerHTML = player2;
 }
 
+// rolling dice function
 function rollDice() {
     let diceNum1 = document.querySelector(".img1")
     let diceNum2 = document.querySelector(".img2")
