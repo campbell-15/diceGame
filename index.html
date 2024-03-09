@@ -9,13 +9,30 @@
 </head>
 <body>
     <div class="container">
-        <h1>Dice Game</h1>
-        <div id="player-turn"></div>
-        <div id="dice-roll"></div>
-        <div id="current-score"></div>
-        <button id="roll-dice">Roll Dice</button>
-        <button id="new-game">New Game</button>
+        <h1>Let's settle the score?</h1>
+
+        <div class="dice">
+            <p class="Player1">Player 1</p>
+            <img src="./dice-images/dice-six-faces-six.png" alt="dice 6" class="img1">
+        </div>
+        <div class="dice">
+            <p class="Player2">Player 2</p>
+            <img src="./dice-images/dice-six-faces-six.png" alt="dice 6" class="img1">
+        </div>
     </div>
+
+    <div class="container">
+        <div class="container bottom">
+            <button type="button" class="btn" onclick="rollDice()"></button>
+            Let's Roll
+        </div>
+        <div class="container bottom">
+            <button type="button" class="btn" onclick="editNames()"></button>
+            Choose your names
+        </div>
+    </div>
+
+
     <script src="main.js"></script>
 </body>
 </html>
