@@ -22,16 +22,16 @@ function rollDice() {
     let diceNum1 = document.querySelector(".img1")
     let diceNum2 = document.querySelector(".img2")
 
-    diceNum1.setAttribute("src", "dice-roll.gif")
-    diceNum2.setAttribute("src", "dice-roll.gif")
+    diceNum1.setAttribute("src", "dice-images/diceroll.gif")
+    diceNum2.setAttribute("src", "dice-images/diceroll.gif")
 
     let result = document.querySelector('h1')
     setTimeout(() => {
         let randomNum1 = Math.floor(Math.random()*6)+1;
         let randomNum2 = Math.floor(Math.random()*6)+1;
 
-        diceNum1.setAttribute('src', 'dice'+randomNum1+'.png');
-        diceNum2.setAttribute('src', 'dice'+randomNum2+'.png');
+        diceNum1.setAttribute('src', 'dice-images/dice' + randomNum1 + '.png');
+        diceNum2.setAttribute('src', 'dice-images/dice' + randomNum2 + '.png');
 
         // winner method
         if (randomNum1 === randomNum2) {
