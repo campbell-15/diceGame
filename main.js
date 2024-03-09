@@ -17,3 +17,7 @@ function editNames() {
         document.querySelector("p.Player2")
         .innerHTML = player2;
 }
+
+function rollDice() {
+    
+}
