@@ -1,3 +1,98 @@
-/* body {
-    background-color: red;
-} */
+body {
+    font-family: "Press Start 2P", system-ui;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #f5b413 50%, #9c1904 50%);
+}
+
+.dice {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.dice-title {
+    font-size: 36px; 
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.col-6 {
+    width: 45%;
+}
+
+.Player1, .Player2 {
+    font-size: 24px; 
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.img1, .img2 {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.bottom {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #dd0956;
+    color: #fff;
+    font-size: 18px; 
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+}
+
+
+#leaderboard-container {
+    background-color: #25044281;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px auto; 
+    max-width: 400px; 
+}
+
+#leaderboard-container h2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+#leaderboard-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#leaderboard-list li {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+
+
