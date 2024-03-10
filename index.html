@@ -5,32 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- styles link -->
     <link rel="stylesheet" href="styles.css">
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Poppins:wght@300;400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Dice Game</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Let's settle the score?</h1>
-
-        <div class="dice">
-            <p class="Player1">Player 1</p>
-            <img src="./dice-images/dice6.png" alt="dice 6" class="img1">
+    <div class="dice">
+        <h1 class="dice-title">Let's settle the score?</h1>
+        <div class="row">
+            <div class="col-6">
+                <p class="Player1">Player 1</p>
+                <img src="./dice-images/dice6.png" alt="dice 6" class="img1">
+            </div>
+            <div class="col-6">
+                <p class="Player2">Player 2</p>
+                <img src="./dice-images/dice6.png" alt="dice 6" class="img2">
+            </div>
         </div>
-        <div class="dice">
-            <p class="Player2">Player 2</p>
-            <img src="./dice-images/dice6.png" alt="dice 6" class="img2">
+    </div>
+
+    <div class="container">
+        <div class="bottom">
+            <button type="button" class="btn" onclick="rollDice()">Let's Roll</button>
         </div>
     </div>
 
     <div class="container">
-        <div class="container bottom">
-            <button type="button" class="btn" onclick="rollDice()"></button>
-            Let's Roll
-        </div>
-        <div class="container bottom">
-            <button type="button" class="btn" onclick="editNames()"></button>
-            Choose your names
+        <div class="bottom">
+            <button type="button" class="btn" onclick="editNames()">Choose your names</button>
         </div>
     </div>
+
+    <div id="leaderboard-container"></div>
+
 
 
     <script src="main.js"></script>
